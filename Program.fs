@@ -8,8 +8,10 @@ let from whom =
 
 [<EntryPoint>]
 let main argv = // string[] -> int
-    let mutable person = "Anonymous Person"
-    if argv.Length > 0 then
-        person <- argv.[0]
+    let person =
+        if argv.Length > 0 then
+            argv.[0]
+        else
+            "Anonymous Person"
     printfn "Hello %s from my F# program!" person
     0 // return an integer exit code
