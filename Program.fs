@@ -3,7 +3,8 @@ open System
 let chapterFunctions =
     [|
         ControlFlow.main;
-        LoopsIterations.main
+        LoopsIterations.main;
+        ForwardPiping.main
     |]
 
 [<EntryPoint>]
