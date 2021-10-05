@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="ControlFlow.fs" />
-    <Compile Include="LoopsIterations.fs" />
+    <Compile Include="chapters/ControlFlow.fs" />
+    <Compile Include="chapters/LoopsIterations.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
