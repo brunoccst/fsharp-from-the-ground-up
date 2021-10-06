@@ -1,14 +1,8 @@
 open System
 
-let chapterFunctions =
-    [|
-        ControlFlow.main;
-        LoopsIterations.main;
-        ForwardPiping.main
-    |]
-
 [<EntryPoint>]
 let main argv = 
-    for mainFunction in chapterFunctions do
-        mainFunction argv
-    0
+    // ControlFlow.main argv;
+    // LoopsIterations.main argv;
+    // ForwardPiping.main argv;
+    CollectionFunctions.main argv;
