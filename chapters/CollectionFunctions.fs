@@ -9,11 +9,14 @@ let printMeanScore (row: String) =
     let elements = row.Split('\t')
     let name = elements.[0]
     let id = elements.[1]
-    let meanScore =
+    let scores =
         elements
         |> Array.skip 2
-        |> Array.averageBy float
-    printfn "%s\t%s\t%0.1f" name id meanScore
+        |> Array.map float
+    let averageScore = scores |> Array.average
+    let lowestScore = scores |> Array.min
+    let highestScore = scores |> Array.max
+    printfn "%s\t%s\t%0.1f\t%0.1f\t%0.1f" name id averageScore lowestScore highestScore
 
 /// <summary>Prints the summary of a row.</summary>
 let summarize filePath =
